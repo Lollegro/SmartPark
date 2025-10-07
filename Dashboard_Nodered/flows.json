@@ -1,0 +1,2191 @@
+[
+    {
+        "id": "a4099f1e3c597c99",
+        "type": "tab",
+        "label": "Input",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fa29203d2fac267c",
+        "type": "tab",
+        "label": "Output",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "16fbabbaf7bec45a",
+        "type": "tab",
+        "label": "Style",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b1a8c2e792f70942",
+        "type": "group",
+        "z": "a4099f1e3c597c99",
+        "name": "Reset Sistema",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "004bccd469d8a40f",
+            "094d3d3c6d4efa3a",
+            "5f3679606191a9b7",
+            "f0394370146bb00d"
+        ],
+        "x": 1254,
+        "y": 59,
+        "w": 632,
+        "h": 142
+    },
+    {
+        "id": "c07a1b3d02e01817",
+        "type": "group",
+        "z": "a4099f1e3c597c99",
+        "name": "Controlo Allarme",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "566a697b2a326388",
+            "803bcdb098f562ed",
+            "108790b1a0100576"
+        ],
+        "x": 1254,
+        "y": 319,
+        "w": 632,
+        "h": 142
+    },
+    {
+        "id": "6236037cff4a5597",
+        "type": "group",
+        "z": "fa29203d2fac267c",
+        "name": "Misurazioni",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "40ceaa7617f4c19b",
+            "8ea945621fd01cf4",
+            "d065322edd4900db",
+            "ab9f0241437ce326",
+            "d6a4177d35450a1e",
+            "72f667ab932301c7",
+            "915364ec7536c734"
+        ],
+        "x": 114,
+        "y": 119,
+        "w": 792,
+        "h": 282
+    },
+    {
+        "id": "b8c57c189539aeff",
+        "type": "group",
+        "z": "fa29203d2fac267c",
+        "name": "Monitoraggio Garage",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7620f0a4fe5cc0e3",
+            "c248e7e823509ccb",
+            "75359ac8a0028a61",
+            "5e8876a4fbcc571c",
+            "8dd4e2293906ff1f",
+            "ef074f6bbf495e12",
+            "bb9b6812f8b89fa6"
+        ],
+        "x": 114,
+        "y": 419,
+        "w": 752,
+        "h": 342
+    },
+    {
+        "id": "21912daf204e1d7f",
+        "type": "group",
+        "z": "a4099f1e3c597c99",
+        "name": "Controllo Lunghezza Codice",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ea261095910c3027",
+            "f1c5f33f1f9a7148",
+            "5fdac6b30ee5125f"
+        ],
+        "x": 214,
+        "y": 539,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "40e0da58d4f0e056",
+        "type": "group",
+        "z": "a4099f1e3c597c99",
+        "name": "Controllo Sbarra",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a2b4ad16d19e33d3",
+            "9cf23bcafa2142fe",
+            "e3db845dc97ad26f",
+            "4e5d068402c3f57e",
+            "49e3227df8af24ea",
+            "8e2204d85ef4f519"
+        ],
+        "x": 194,
+        "y": 19,
+        "w": 1052,
+        "h": 202
+    },
+    {
+        "id": "401fa1f7c227b095",
+        "type": "group",
+        "z": "a4099f1e3c597c99",
+        "name": "Controllo Soglie",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "05830d30828a8380",
+            "5d9e66a3a7851326",
+            "8cfa01c150046f75",
+            "3d1baa0b9d30ebb3",
+            "d081fc804404286f",
+            "6e01dd34e79f2f40",
+            "fd2c4b30825b105a",
+            "f06c0fb3fa414311",
+            "6fa92c6fd131c6a7"
+        ],
+        "x": 214,
+        "y": 259,
+        "w": 1032,
+        "h": 242
+    },
+    {
+        "id": "bd646688574232f5",
+        "type": "group",
+        "z": "fa29203d2fac267c",
+        "name": "Storico Emergenze",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4345d16d24e7da91",
+            "82548c89c9b9f7c7",
+            "088e68317c9920d9"
+        ],
+        "x": 114,
+        "y": 19,
+        "w": 752,
+        "h": 82
+    },
+    {
+        "id": "8229d3abcdd1f695",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9dd85f07bf328fbb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#b21010",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Style Garage",
+                "default": "#4B7930",
+                "baseColor": "#8f0101",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#8f0101",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#8f0101",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#383333",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#5c5c5c",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#6f6f6f",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#8f0101",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#595959",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Dashboard Garage",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e5282a83e41e4b6d",
+        "type": "ui_tab",
+        "name": "Remote Control",
+        "icon": "fa-keyboard-o",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5bc074656c3853c1",
+        "type": "ui_group",
+        "name": "Controllo sbarra",
+        "tab": "e5282a83e41e4b6d",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": "Style_Group_Controllo_Sbarra"
+    },
+    {
+        "id": "2b50449ea770b4f3",
+        "type": "ui_group",
+        "name": "Gestione allarme",
+        "tab": "e5282a83e41e4b6d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": "Style_Group_Gestione_Allarme"
+    },
+    {
+        "id": "36b29635f40a70a4",
+        "type": "ui_tab",
+        "name": "Statistiche",
+        "icon": "fa-line-chart",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "375e961c19079218",
+        "type": "ui_group",
+        "name": "Grafici",
+        "tab": "36b29635f40a70a4",
+        "order": 2,
+        "disp": true,
+        "width": 25,
+        "collapse": false,
+        "className": "Style_Group_Grafici"
+    },
+    {
+        "id": "84335f566c41e57f",
+        "type": "ui_tab",
+        "name": "Rilevazioni",
+        "icon": "fa-download",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5ce4fe9162ab505b",
+        "type": "ui_group",
+        "name": "Controllo Stato",
+        "tab": "84335f566c41e57f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": "Style_Group_Controllo_Stato"
+    },
+    {
+        "id": "510edefd96299c79",
+        "type": "ui_group",
+        "name": "Misure",
+        "tab": "84335f566c41e57f",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": "Style_Group_Misure"
+    },
+    {
+        "id": "77d4597f87e4a7a3",
+        "type": "ui_group",
+        "name": "Settaggio Parametri",
+        "tab": "e5282a83e41e4b6d",
+        "order": 3,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": "Style_Group_Settaggio_Parametri"
+    },
+    {
+        "id": "17efefcd1a54cb8e",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1bde0fe6b2b9989d",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c39428c3521e2c6a",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ba80aebe19b8d88c",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e17e5db3cf844b49",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "613b4e3732cf3d1e",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a6741580b6e2b72f",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "eb651f09bcb10746",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "66766bceddc83fe0",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 12,
+        "width": "2",
+        "height": "1"
+    },
+    {
+        "id": "4d2ae25ca399d021",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "755ecd5a9a62ed3e",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ef1baa9590821ede",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dbfdfc2fb2110df6",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e494a0b0abb1aad2",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c30cfbaff930854a",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7b60fc793708b86b",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "335219fc2f8af26e",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5b9f413421f4090d",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a99700e73764a13c",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5655af40dba34b24",
+        "type": "ui_spacer",
+        "z": "16fbabbaf7bec45a",
+        "name": "spacer",
+        "group": "375e961c19079218",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "93e26d930e469863",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "5ce4fe9162ab505b",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7c6e826d75159e9f",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "5ce4fe9162ab505b",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "73283b4948aa89b2",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "5ce4fe9162ab505b",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "95a2f91722c15e90",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "5ce4fe9162ab505b",
+        "order": 6,
+        "width": "1",
+        "height": "2"
+    },
+    {
+        "id": "609cf0d9f3c85d3a",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1231826d804e51cd",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "44d83a94d114dec9",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "92e85810a23bf8c2",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "73dedc63a6ea0df9",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ed0efc09869b32e8",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5fc4a9603e7d53f8",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4d9939d644c2cd92",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2f6c511a8643178e",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 10,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "dbc5f0ea80a06ef5",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8b8b732e25400a61",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "38f79de85b092aeb",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0dd68b9b6f80e27b",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7541221e502f637a",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ebef033c015f7d51",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bfbb602c9896d721",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "faa76a712ea7f301",
+        "type": "ui_spacer",
+        "z": "fa29203d2fac267c",
+        "name": "spacer",
+        "group": "510edefd96299c79",
+        "order": 19,
+        "width": "1",
+        "height": "2"
+    },
+    {
+        "id": "872cfac08112cbe2",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "5bc074656c3853c1",
+        "order": 1,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ab9e27259f7bf907",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "5bc074656c3853c1",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6a16545e5d1f5576",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "5bc074656c3853c1",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "926c3a7b853c1a4c",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "5bc074656c3853c1",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "1e0d67cdf15995cf",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "5bc074656c3853c1",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e2a73398b79147c8",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "5bc074656c3853c1",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "181c316748133f2b",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "5bc074656c3853c1",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "53273e48e15c3b01",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "5bc074656c3853c1",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6ee7ee6184b65418",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "2b50449ea770b4f3",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "feb71018c84a9c97",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "2b50449ea770b4f3",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aa70d8f7dfd98a1d",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "2b50449ea770b4f3",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0b46a55bcbe7a12b",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "2b50449ea770b4f3",
+        "order": 6,
+        "width": "1",
+        "height": "2"
+    },
+    {
+        "id": "a1b9a1d2737ce97e",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "985f96472bffbc73",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a7a576378f88180d",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "91ee5094e8d65bfb",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "12578f502ed5a507",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3be8e0c5b80da2e1",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "017cb5497f640252",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "53ec8504e2238e36",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "42a5cad127afa7d1",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 13,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "38886e6379864000",
+        "type": "ui_spacer",
+        "z": "a4099f1e3c597c99",
+        "name": "spacer",
+        "group": "77d4597f87e4a7a3",
+        "order": 15,
+        "width": "3",
+        "height": "2"
+    },
+    {
+        "id": "05830d30828a8380",
+        "type": "ui_numeric",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "",
+        "label": "Soglia Temperatura",
+        "tooltip": "",
+        "group": "77d4597f87e4a7a3",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "20",
+        "max": "50",
+        "step": "5",
+        "className": "",
+        "x": 670,
+        "y": 380,
+        "wires": [
+            [
+                "5d9e66a3a7851326"
+            ]
+        ]
+    },
+    {
+        "id": "5d9e66a3a7851326",
+        "type": "mqtt out",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "Imposta Soglia Temperatura",
+        "topic": "IotUnisa/Gruppo02/Imposta_soglia_temperatura",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8229d3abcdd1f695",
+        "x": 1100,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "566a697b2a326388",
+        "type": "ui_button",
+        "z": "a4099f1e3c597c99",
+        "g": "c07a1b3d02e01817",
+        "name": "",
+        "group": "2b50449ea770b4f3",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Accendi Allarme",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button_accendi_allarme",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1360,
+        "y": 360,
+        "wires": [
+            [
+                "108790b1a0100576"
+            ]
+        ]
+    },
+    {
+        "id": "803bcdb098f562ed",
+        "type": "ui_button",
+        "z": "a4099f1e3c597c99",
+        "g": "c07a1b3d02e01817",
+        "name": "",
+        "group": "2b50449ea770b4f3",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Spegni Allarme",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button_spegni_allarme",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1360,
+        "y": 420,
+        "wires": [
+            [
+                "108790b1a0100576"
+            ]
+        ]
+    },
+    {
+        "id": "108790b1a0100576",
+        "type": "mqtt out",
+        "z": "a4099f1e3c597c99",
+        "g": "c07a1b3d02e01817",
+        "name": "Gestione allarme",
+        "topic": "IotUnisa/Gruppo02/Gestione_allarme",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8229d3abcdd1f695",
+        "x": 1770,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a2b4ad16d19e33d3",
+        "type": "ui_numeric",
+        "z": "a4099f1e3c597c99",
+        "g": "40e0da58d4f0e056",
+        "name": "",
+        "label": "Velocità Sbarra",
+        "tooltip": "",
+        "group": "5bc074656c3853c1",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "0.005",
+        "max": "0.05",
+        "step": "0.005",
+        "className": "",
+        "x": 640,
+        "y": 180,
+        "wires": [
+            [
+                "9cf23bcafa2142fe"
+            ]
+        ]
+    },
+    {
+        "id": "9cf23bcafa2142fe",
+        "type": "mqtt out",
+        "z": "a4099f1e3c597c99",
+        "g": "40e0da58d4f0e056",
+        "name": "Velocità Sbarra",
+        "topic": "IotUnisa/Gruppo02/Velocità_sbarra",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8229d3abcdd1f695",
+        "x": 1140,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ea261095910c3027",
+        "type": "ui_numeric",
+        "z": "a4099f1e3c597c99",
+        "g": "21912daf204e1d7f",
+        "name": "",
+        "label": "Lunghezza Codice",
+        "tooltip": "",
+        "group": "77d4597f87e4a7a3",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "3",
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 770,
+        "y": 580,
+        "wires": [
+            [
+                "f1c5f33f1f9a7148"
+            ]
+        ]
+    },
+    {
+        "id": "f1c5f33f1f9a7148",
+        "type": "mqtt out",
+        "z": "a4099f1e3c597c99",
+        "g": "21912daf204e1d7f",
+        "name": "Set lunghezza codice",
+        "topic": "IotUnisa/Gruppo02/Settaggio_lunghezza_codice",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8229d3abcdd1f695",
+        "x": 1120,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "8cfa01c150046f75",
+        "type": "ui_numeric",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "",
+        "label": "Soglia Distanza",
+        "tooltip": "",
+        "group": "77d4597f87e4a7a3",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "20",
+        "step": "0.5",
+        "className": "",
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "3d1baa0b9d30ebb3"
+            ]
+        ]
+    },
+    {
+        "id": "3d1baa0b9d30ebb3",
+        "type": "mqtt out",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "Imposta Soglia Distanza",
+        "topic": "IotUnisa/Gruppo02/Imposta_soglia_distanza",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8229d3abcdd1f695",
+        "x": 1110,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "004bccd469d8a40f",
+        "type": "ui_button",
+        "z": "a4099f1e3c597c99",
+        "g": "b1a8c2e792f70942",
+        "name": "Reset",
+        "group": "77d4597f87e4a7a3",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button_reset",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1330,
+        "y": 100,
+        "wires": [
+            [
+                "094d3d3c6d4efa3a"
+            ]
+        ]
+    },
+    {
+        "id": "094d3d3c6d4efa3a",
+        "type": "mqtt out",
+        "z": "a4099f1e3c597c99",
+        "g": "b1a8c2e792f70942",
+        "name": "Reset",
+        "topic": "IotUnisa/Gruppo02/Reset",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8229d3abcdd1f695",
+        "x": 1810,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e3db845dc97ad26f",
+        "type": "ui_button",
+        "z": "a4099f1e3c597c99",
+        "g": "40e0da58d4f0e056",
+        "name": "",
+        "group": "5bc074656c3853c1",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Alza Sbarra",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button_sbarra_su",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 60,
+        "wires": [
+            [
+                "49e3227df8af24ea"
+            ]
+        ]
+    },
+    {
+        "id": "4e5d068402c3f57e",
+        "type": "ui_button",
+        "z": "a4099f1e3c597c99",
+        "g": "40e0da58d4f0e056",
+        "name": "",
+        "group": "5bc074656c3853c1",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Abbassa Sbarra",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "button_sbarra_giu",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [
+                "49e3227df8af24ea"
+            ]
+        ]
+    },
+    {
+        "id": "49e3227df8af24ea",
+        "type": "mqtt out",
+        "z": "a4099f1e3c597c99",
+        "g": "40e0da58d4f0e056",
+        "name": "Gestione sbarra",
+        "topic": "IotUnisa/Gruppo02/Gestione_sbarra",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8229d3abcdd1f695",
+        "x": 1140,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5f3679606191a9b7",
+        "type": "mqtt in",
+        "z": "a4099f1e3c597c99",
+        "g": "b1a8c2e792f70942",
+        "name": "Gestione Errori",
+        "topic": "IotUnisa/Gruppo02/Errore",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8229d3abcdd1f695",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1360,
+        "y": 160,
+        "wires": [
+            [
+                "f0394370146bb00d"
+            ]
+        ]
+    },
+    {
+        "id": "f0394370146bb00d",
+        "type": "ui_toast",
+        "z": "a4099f1e3c597c99",
+        "g": "b1a8c2e792f70942",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "PopUp",
+        "x": 1770,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9ac2d64a40fb622b",
+        "type": "mqtt in",
+        "z": "a4099f1e3c597c99",
+        "name": "Inizializzatore",
+        "topic": "IotUnisa/Gruppo02/Inizializzazione",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8229d3abcdd1f695",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 380,
+        "wires": [
+            [
+                "5fdac6b30ee5125f",
+                "d081fc804404286f",
+                "6e01dd34e79f2f40",
+                "8e2204d85ef4f519",
+                "6fa92c6fd131c6a7"
+            ]
+        ]
+    },
+    {
+        "id": "5fdac6b30ee5125f",
+        "type": "change",
+        "z": "a4099f1e3c597c99",
+        "g": "21912daf204e1d7f",
+        "name": "Set_lunghezza_codice",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.l_codice",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "ea261095910c3027"
+            ]
+        ]
+    },
+    {
+        "id": "d081fc804404286f",
+        "type": "change",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "Set_soglia_temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.sogliaTemperatura",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "05830d30828a8380"
+            ]
+        ]
+    },
+    {
+        "id": "6e01dd34e79f2f40",
+        "type": "change",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "Set_soglia_distanza",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.sogliaDistanza",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "8cfa01c150046f75"
+            ]
+        ]
+    },
+    {
+        "id": "8e2204d85ef4f519",
+        "type": "change",
+        "z": "a4099f1e3c597c99",
+        "g": "40e0da58d4f0e056",
+        "name": "Set_velocità_sbarra",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.velocita_sbarra",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "a2b4ad16d19e33d3"
+            ]
+        ]
+    },
+    {
+        "id": "fd2c4b30825b105a",
+        "type": "mqtt out",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "Intervallo controllo numero entrate",
+        "topic": "IotUnisa/Gruppo02/Intervallo_counter_entrate",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8229d3abcdd1f695",
+        "x": 1080,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f06c0fb3fa414311",
+        "type": "ui_numeric",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "",
+        "label": "Intervallo Check Entrate (secondi)",
+        "tooltip": "",
+        "group": "77d4597f87e4a7a3",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "30",
+        "max": "3600",
+        "step": "10",
+        "className": "",
+        "x": 680,
+        "y": 460,
+        "wires": [
+            [
+                "fd2c4b30825b105a"
+            ]
+        ]
+    },
+    {
+        "id": "6fa92c6fd131c6a7",
+        "type": "change",
+        "z": "a4099f1e3c597c99",
+        "g": "401fa1f7c227b095",
+        "name": "Set_intervallo",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.intervallo",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "f06c0fb3fa414311"
+            ]
+        ]
+    },
+    {
+        "id": "40ceaa7617f4c19b",
+        "type": "ui_gauge",
+        "z": "fa29203d2fac267c",
+        "g": "6236037cff4a5597",
+        "name": "",
+        "group": "510edefd96299c79",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8ea945621fd01cf4",
+        "type": "ui_gauge",
+        "z": "fa29203d2fac267c",
+        "g": "6236037cff4a5597",
+        "name": "",
+        "group": "510edefd96299c79",
+        "order": 12,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d065322edd4900db",
+        "type": "mqtt in",
+        "z": "fa29203d2fac267c",
+        "g": "6236037cff4a5597",
+        "name": "Misurazioni",
+        "topic": "IotUnisa/Gruppo02/Misurazioni",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "8229d3abcdd1f695",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 260,
+        "wires": [
+            [
+                "ab9f0241437ce326",
+                "d6a4177d35450a1e"
+            ]
+        ]
+    },
+    {
+        "id": "ab9f0241437ce326",
+        "type": "change",
+        "z": "fa29203d2fac267c",
+        "g": "6236037cff4a5597",
+        "name": "Set_temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 200,
+        "wires": [
+            [
+                "40ceaa7617f4c19b",
+                "72f667ab932301c7"
+            ]
+        ]
+    },
+    {
+        "id": "d6a4177d35450a1e",
+        "type": "change",
+        "z": "fa29203d2fac267c",
+        "g": "6236037cff4a5597",
+        "name": "Set_umidità",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "8ea945621fd01cf4",
+                "915364ec7536c734"
+            ]
+        ]
+    },
+    {
+        "id": "72f667ab932301c7",
+        "type": "ui_chart",
+        "z": "fa29203d2fac267c",
+        "g": "6236037cff4a5597",
+        "name": "",
+        "group": "375e961c19079218",
+        "order": 2,
+        "width": 7,
+        "height": 5,
+        "label": "Andamento temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f02828",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "915364ec7536c734",
+        "type": "ui_chart",
+        "z": "fa29203d2fac267c",
+        "g": "6236037cff4a5597",
+        "name": "",
+        "group": "375e961c19079218",
+        "order": 4,
+        "width": 7,
+        "height": 5,
+        "label": "Grafico umidità",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f02828",
+            "#aec7e8",
+            "#ff7700",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7620f0a4fe5cc0e3",
+        "type": "ui_text",
+        "z": "fa29203d2fac267c",
+        "g": "b8c57c189539aeff",
+        "group": "5ce4fe9162ab505b",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "name": "Status",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c248e7e823509ccb",
+        "type": "mqtt in",
+        "z": "fa29203d2fac267c",
+        "g": "b8c57c189539aeff",
+        "name": "Stato garage",
+        "topic": "IotUnisa/Gruppo02/Stato_garage",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8229d3abcdd1f695",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 520,
+        "wires": [
+            [
+                "5e8876a4fbcc571c",
+                "8dd4e2293906ff1f"
+            ]
+        ]
+    },
+    {
+        "id": "75359ac8a0028a61",
+        "type": "ui_text",
+        "z": "fa29203d2fac267c",
+        "g": "b8c57c189539aeff",
+        "group": "5ce4fe9162ab505b",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "name": "Code",
+        "label": "Code",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "5e8876a4fbcc571c",
+        "type": "change",
+        "z": "fa29203d2fac267c",
+        "g": "b8c57c189539aeff",
+        "name": "Set_stato",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.stato",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "7620f0a4fe5cc0e3"
+            ]
+        ]
+    },
+    {
+        "id": "8dd4e2293906ff1f",
+        "type": "change",
+        "z": "fa29203d2fac267c",
+        "g": "b8c57c189539aeff",
+        "name": "Set_codice",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.codice",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 580,
+        "wires": [
+            [
+                "75359ac8a0028a61"
+            ]
+        ]
+    },
+    {
+        "id": "ef074f6bbf495e12",
+        "type": "mqtt in",
+        "z": "fa29203d2fac267c",
+        "g": "b8c57c189539aeff",
+        "name": "Monitoraggio entrate",
+        "topic": "IotUnisa/Gruppo02/Monitoraggio_entrate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8229d3abcdd1f695",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 720,
+        "wires": [
+            [
+                "bb9b6812f8b89fa6"
+            ]
+        ]
+    },
+    {
+        "id": "bb9b6812f8b89fa6",
+        "type": "ui_chart",
+        "z": "fa29203d2fac267c",
+        "g": "b8c57c189539aeff",
+        "name": "",
+        "group": "375e961c19079218",
+        "order": 6,
+        "width": 7,
+        "height": 5,
+        "label": "Entrate",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f02828",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 780,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4345d16d24e7da91",
+        "type": "mqtt in",
+        "z": "fa29203d2fac267c",
+        "g": "bd646688574232f5",
+        "name": "Storico Emergenze",
+        "topic": "IotUnisa/Gruppo02/Storico_emergenze",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8229d3abcdd1f695",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 60,
+        "wires": [
+            [
+                "088e68317c9920d9"
+            ]
+        ]
+    },
+    {
+        "id": "82548c89c9b9f7c7",
+        "type": "file",
+        "z": "fa29203d2fac267c",
+        "g": "bd646688574232f5",
+        "name": "Storico Emergenze",
+        "filename": "/data/Storico_Emergenze.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "utf8",
+        "x": 750,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "088e68317c9920d9",
+        "type": "function",
+        "z": "fa29203d2fac267c",
+        "g": "bd646688574232f5",
+        "name": "function Emergenza",
+        "func": "var temp = new Date();\nvar data = temp.getDate() + \"/\" + (temp.getMonth() + 1) + \"/\" + temp.getFullYear();\nvar ora = temp.getHours() + \":\" + temp.getMinutes() + \":\" + temp.getSeconds();\nvar tempo = parseInt(msg.payload);\nvar giorni = 0\nvar ore = 0\nvar minuti = 0;\nvar secondi = 0;\nvar durata = tempo.toString() + \" secondi.\";\nif (Math.floor(tempo/60) != 0){\n    minuti = Math.floor(tempo/60);\n    secondi = tempo%60;\n    durata = minuti.toString() + \" minuti e \" + secondi.toString() + \" secondi.\";\n    if (Math.floor(minuti/60) != 0){\n        ore = Math.floor(minuti/60);\n        minuti = minuti%60;\n        durata = ore.toString() + \" ore, \" + minuti.toString() + \" minuti e \" + secondi.toString() + \" secondi.\";\n        if (Math.floor(ore/24) != 0){\n            giorni = Math.floor(ore/24);\n            ore = ore%24;\n            durata =giorni.toString() + \" giorni, \" + ore.toString() + \" ore, \" + minuti.toString() + \" minuti e \" + secondi.toString() + \" secondi.\";\n        }\n    }\n}\nmsg.payload = \"Data emergenza: \" + data + \" Ora emergenza: \" + ora + \" Durata emergenza: \" + durata;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 60,
+        "wires": [
+            [
+                "82548c89c9b9f7c7"
+            ]
+        ]
+    },
+    {
+        "id": "c03c397fa1ba131a",
+        "type": "ui_template",
+        "z": "16fbabbaf7bec45a",
+        "group": "5bc074656c3853c1",
+        "name": "DashBoard Style",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "format": "<style>\n    /* Stile per tutti i gruppi */\n    ui-card-panel{\n        border-radius: 10px;\n    }\n\n    ui-card-panel button {\n        border-radius: 20px !important;\n    }\n\n    .nr-dashboard-cardtitle{\n        font-weight: bold !important;\n        text-align: center ;\n    }\n\n    .button_sbarra_su, .button_sbarra_giu, .button_accendi_allarme, .button_spegni_allarme, .button_reset{\n        background-color: rgb(111,111,111) !important;\n    }\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 730,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    }
+]
